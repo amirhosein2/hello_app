@@ -4,7 +4,8 @@ class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
   
   def hello
-    render text: Time.now + ""
+    time = Time.now
+    render text: time.to_s(:time)
     render text: "سلام چه طوری؟"
   end
 end
