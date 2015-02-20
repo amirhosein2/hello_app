@@ -7,6 +7,6 @@ class ApplicationController < ActionController::Base
     time = Time.now
     amir = time.to_s(:time)
     #render text: "سلام چه طوری؟" + amir
-    render text: "A: سلام\nB:سلام\nA: می تونم بپرسم ساعت چنده؟B:"+ amir 
+    render text: "A: hello ######## B: hi!  ######## A:do you know what time is it? ######## B: Yes I'm. It's : " + amir + " ######## A: Are you sure?  ######## B: Reload the page to see magic ######## This is my first project in Ruby on rails. I didn't learn any thing special in this chapter to create magice page ( I try my best )"
   end
 end
