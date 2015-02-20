@@ -5,7 +5,8 @@ class ApplicationController < ActionController::Base
   
   def hello
     time = Time.now
-    amir : time.to_s(:time)
-    render text: "سلام چه طوری؟"+amir
+    amir = time.to_s(:time)
+    #render text: "سلام چه طوری؟" + amir
+    render text: "A: سلام\nB:سلام\nA: می تونم بپرسم ساعت چنده؟B:"+ amir 
   end
 end
